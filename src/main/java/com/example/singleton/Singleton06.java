@@ -18,7 +18,7 @@ public class Singleton06 {
     /**
      * 提供一个静态的公有方法，加入双重检查代码，解决线程安全问题, 同时解决懒加载问题
      */
-    public static synchronized Singleton06 getInstance() {
+    public static Singleton06 getInstance() {
         if (instance == null) {
             synchronized (Singleton06.class) {
                 if (instance == null) {
